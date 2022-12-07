@@ -8,6 +8,7 @@ const App = () => {
   const [courseGoals, setCourseGoals] = useState([
     { text: "Do all exercises!", id: "g1" },
     { text: "Finish the course!", id: "g2" },
+    { text: "Finish the course not now!", id: "g3" },
   ]);
 
   const addGoalHandler = (enteredText) => {
@@ -47,4 +48,3 @@ const App = () => {
 
 export default App;
 
-// ok
