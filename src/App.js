@@ -18,6 +18,13 @@ const App = () => {
       return updatedGoals;
     });
   };
+  onst addGoalHandler = (enteredText) => {
+    setCourseGoals((prevGoals) => {
+      const updatedGoals = [...prevGoals];
+      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
+      return updatedGoals;
+    });
+  };
   const [update, setUpdate] = useState([]);
   const deleteItemHandler = (goalId) => {
     setCourseGoals((prevGoals) => {
